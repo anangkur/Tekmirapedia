@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "976063915593",
+    "firebase_url": "https://ensiklopedia-tekmira.firebaseio.com",
+    "project_id": "ensiklopedia-tekmira",
+    "storage_bucket": "ensiklopedia-tekmira.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976063915593:android:b048fac417b2943f",
+        "android_client_info": {
+          "package_name": "com.example.anangkur.ensiklopediatekmira"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "976063915593-mqas8enfmr4su7m7123j8f1s82jb63im.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.anangkur.ensiklopediatekmira",
+            "certificate_hash": "f0aa48ffae20fa8f957a5446654395ef0bedef7f"
+          }
+        },
+        {
+          "client_id": "976063915593-1vj7re4qnchgg5mkhasdf1qn0ctqoc0i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKftYXhliSocw2E_ZlSGqglfsos2Tr3Gk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "976063915593-1vj7re4qnchgg5mkhasdf1qn0ctqoc0i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

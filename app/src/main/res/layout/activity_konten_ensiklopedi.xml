@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anangkur.ensiklopediatekmira.KontenEnsiklopediActivity">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_kontenensiklopediactivity"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:clickable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/btn_backtohasilsearch"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/left_arrow"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_judul_kontenEnsiklopedi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="80dp"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#fff"
+                android:singleLine="true"
+                android:text="Judul"
+                android:textSize="18dp"
+                android:clickable="true"/>
+
+            <RelativeLayout
+                android:id="@+id/btn_tosearch"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="-60dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/magnifying_glass_white"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_kontenensiklopediactivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/txt_judul_kontenEnsiklopedi2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Judul"
+                android:textSize="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <RelativeLayout
+                android:id="@+id/container_img_ensiklopedi"
+                android:layout_width="480dp"
+                android:layout_height="240dp"
+                android:layout_below="@id/txt_judul_kontenEnsiklopedi2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/img_kontenensiklopedi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_deskripsikontenensiklopedi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/container_img_ensiklopedi"
+                android:text="Deskripsi"
+                android:textSize="16dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.widget.RelativeLayout>

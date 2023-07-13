@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anangkur.ensiklopediatekmira.SearchActivity">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_searchactivity"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:clickable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/btn_backtomain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/left_arrow"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/magnifying_glass_white"/>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/input_search"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginLeft="30dp"
+                android:hint="Mencari..."
+                android:background="@color/colorPrimary"
+                android:textColorHint="#ccc"
+                android:layout_gravity="center_vertical"
+                android:textCursorDrawable="@null"
+                android:textColor="#fff"
+                android:singleLine="true"/>
+
+            <RelativeLayout
+                android:id="@+id/btn_delete_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="-40dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cancel"
+                    android:layout_gravity="center_vertical"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_searchactivity">
+
+
+    </RelativeLayout>
+</android.widget.RelativeLayout>

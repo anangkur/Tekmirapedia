@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anangkur.ensiklopediatekmira.HasilSearchActivity">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_hasilsearchactivity"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:clickable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/btn_backtosearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/left_arrow"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/title_hasil_pencarian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hasil Pencarian"
+                android:layout_marginLeft="30dp"
+                android:textSize="18dp"
+                android:textColor="#fff"/>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_hasil_pencarian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_hasilsearchactivity"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+</android.widget.RelativeLayout>

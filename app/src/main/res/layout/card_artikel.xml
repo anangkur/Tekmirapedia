@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/cardview_artikel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false">
+
+        <ImageView
+            android:id="@+id/img_artikel"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:clickable="false"/>
+
+        <TextView
+            android:layout_below="@id/img_artikel"
+            android:id="@+id/txt_judul_artikel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Judul"
+            android:textSize="18dp"
+            android:layout_margin="10dp"
+            android:clickable="false"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
